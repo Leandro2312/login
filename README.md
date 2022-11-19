@@ -1,7 +1,6 @@
 ## Aula 02
  - Envio de informações para PHP
  - Operadores relacionais 
- - Operadores Lógicos
  - Estrutura de decisão
  - Redirecionamento de página
 
@@ -19,4 +18,20 @@
         <button type="reset">Limpar</button>
 </form>
 ```
+- no arquivo php que vai receber as informações, você precisa utilizar o método **$POST[]** ou **$_GET[]** em conjunto com o *name* do campo que você deseja recuperar a informação. Exemplo:
+```php
+$usuario = $_POST['usuario'];
+$senha = $_POST['senha'];
+
+echo "$usuario - $senha";
+```
+
+## Operadores relacionais 
+- `> maior`
+- `< menor`
+- `>= maior igual`
+- `<= menor igual`
+- `!= diferente`
+- `== igual`
+
  
